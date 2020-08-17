@@ -1,104 +1,65 @@
 <!DOCTYPE html>
+
 <html>
-
-
   <head>
-
-    <link rel="stylesheet" href="screen.css" />
-
-    <meta charset="utf-8">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
+    <meta charset="utf-8" />
     <title>Slang Across The World</title>
+    <meta name="description" content="Kiwi, aussie, British and American Slang!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  </head>
 
-    <meta name="description" content= Kiwi, aussie, British and American Slang!" />
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href='Home'>Home</a><li>
+          <li><a href='expressions'>Expressions</a><li>
+          <li><a href='sayings'>Sayings</a><li>
+          <li><a href='object'>Objects</a><li>
+          <li><a href='R18'>R18</a><li>
+          <li><a href='contact'>Contact</a><li>
+        </ul>
+      </nav>
+    </header>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-
-    fit=no">
+    <div id="header">
+      <img src="{{ url_for('static', filename='aussie_flag.svg') }}" />
+      <img src="{{ url_for('static', filename='nz_flag.svg') }}" />
+      <img src="{{ url_for('static', filename='uk_flag.svg') }}" />
+      <img src="{{ url_for('static', filename='usa_flag.svg') }}" />
+      <h1>Welcome To Slang Across The World</h1>
+      <em>Slang in NZ &bull; AUS &bull; UK &bull; USA</em>
+    </div>
 
-      </head>
-
-      <body>
-
-        <header>
-
-        <nav>
-          <ul>
-
-          <li><a href='#'>Home</a><li>
-          <li><a href='#'>Expressions</a><li>
-          <li><a href='#'>Sayings</a><li>
-          <li><a href='#'>Objects</a><li>
-          <li><a href='#'>R18</a><li>
-          <li><a href='#'>Contact</a><li>
-
-
-
-
-          </ul>
-
-          </nav>
-
-        </header2>
-
-        <div id="header">
-
-
-          <svg width="400" height="100">
-
-            <rect width="400" height="100" style="fill:rgb(0,0,0);stroke-width:10;stroke:rgb(0,0,0)" />
-
-          </svg>
-
-            <h1>Welcome To Slang Across The World</h1>
-
-            <em>Slang in NZ &bull; AUS &bull; UK &bull; USA</em>
-
-          <div class= "container">
-
-
-
+    <div class= "container">
+      ...
     </div>
 
     <div id="menu">
+      <h2>Choose A Slang Categories</h2>
 
+      <div id="categories">
+        <p>
+          <a class="btn-yellow" href="expressions">Expressions</a>
+        </p>
+        <p>
+          <a class="btn-red" href="Sayings">Sayings</a>
+        </p>
+        <p>
+          <a class="btn-blue" href="Objects">Objects</a>
+        </p>
+        <p>
+          <a class="btn-green" href="R18">R18</a>
+        </p>
+      </div>
 
-      <<h2>Choose A Slang Categories</h2>>
+    </div>
 
-    <p>
+    <div id="footer">
+      Disclaimer: May contain inappropriate content
+    </div>
 
-        <span>  <a class="btn-yellow" href="expressions.html">Expressions</a> </span>
+  </body>
 
-    </p>
-
-    <p>
-
-      <a class="btn-red" href="Sayings.html">Sayings</a>
-
-    </p>
-
-    <p>
-
-      <a class="btn-blue" href="Objects.html">Objects</a>
-
-    </p>
-
-    <p>
-
-      <a class="btn-green" href="R18.html">R18</a>
-
-    </p>
-
-
-
-
-
-
-        <div id="footer">
-
-            Disclaimer: May have inappropriate content
-
-        </div>
-
-    </body>
-
-  </html>
+</html>

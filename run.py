@@ -1,15 +1,23 @@
-    from flask import Flask, render_template app = Flask(__name__)
+from flask import Flask, render_template
 
-    @app.route('/') def index():
+app = Flask(__name__)
 
+@app.route('/')
+def index():
     return render_template('index.html')
 
-    from flask import
+@app.route('/expressions')
+def expresssions():
+    return render_template('expressions.html')
 
-    Flask app = Flask(__name__)
+@app.route('/Objects')
+def Objects():
+    return render_template('Objects.html')
 
-    @app.route('/')
+@app.route('/Sayings')
+def Sayings():
+    return render_template('Sayings.html')
 
-     def index():
-
-        return('<h1>hello world</h1>')
+@app.route('/R18')
+def R18():
+    return render_template('R18.html')

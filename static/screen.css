@@ -19,10 +19,26 @@
     margin: 0, auto;
   }
 
-  header{
-    background:#55d6aa;
-  }
+header{
+  background:#55d6aa;
+}
 
+#header img {
+  height: 40px;
+}
+
+#menu h2 {
+  text-align: center;
+}
+
+#categories {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#categories p {
+  text-align: center;
+}
 
 }
   nav ul {
@@ -47,7 +63,7 @@
 
   nav a:hover{
     color: #000000;
-    
+
   }
 
 
@@ -230,6 +246,9 @@
 
         text-align:center;
 
+
       }
+
+
 
       /* button */
