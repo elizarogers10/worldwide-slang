@@ -38,13 +38,13 @@ def disgusting():
 def angry():
     return render_template('angry.html')
 
-@app.route('/ohh_no')
-def ohh_no():
-    return render_template('ohh_no.html')
+@app.route('/ohhno')
+def ohhno():
+    return render_template('ohhno.html')
 
-@app.route('/a_man')
-def a_man():
-    return render_template('a_man.html')
+@app.route('/man')
+def man():
+    return render_template('man.html')
 
 @app.route('/good')
 def good():
@@ -62,9 +62,9 @@ def friend():
 def goodbye():
     return render_template('goodbye.html')
 
-@app.route('/a_chat')
-def a_chat():
-    return render_template('a_chat.html')
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
 
 @app.route('/insults')
 def insults():
@@ -82,9 +82,9 @@ def drunk():
 def vommiting():
     return render_template('vommiting.html')
 
-@app.route('/go_away')
-def go_away():
-    return render_template('go_away.html')
+@app.route('/goaway')
+def goaway():
+    return render_template('goaway.html')
 
 @app.route('/alcohol')
 def alcohol():
@@ -97,3 +97,19 @@ def condom():
 @app.route('/penis')
 def penis():
     return render_template('penis.html')
+
+@app.route('/carbonateddrink')
+def carbonateddrink():
+    return render_template('carbonateddrink.html')
+
+@app.route('/swimmingsuit')
+def swimmingsuit():
+    return render_template('swimmingsuit.html')
+
+@app.route('/sugarytreat')
+def sugarytreat():
+    return render_template('sugarytreat.html')
+
+@app.route('/portablefreezer')
+def portablefreezer():
+    return render_template('portablefreezer.html')

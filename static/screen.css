@@ -5,6 +5,7 @@
 
 
 
+
 /* id selector (one-off items) */
 
 
@@ -18,7 +19,7 @@ header{
   padding: 5px;
 }
 
-#menu h2 {
+ h2 {
   text-align: center;
 }
 
@@ -31,15 +32,15 @@ header{
   text-align: center;
 }
 
-}
   nav ul {
-    margins: 0;
-    padding: 0;
-    list stle: none;
+    margins: auto;
+    padding: 20px 0;
+    list-style-type: none;
+    text-align: center;
   }
 
   nav li {
-    display: inline-block;
+    display: inline;
     margin-left:70px;
     padding-top: 23px;
 
@@ -50,20 +51,14 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    font-family: 'Fredoka One', cursive; margin: 0;
+
   }
 
   nav a:hover{
     color: #000000;
 
   }
-
-
-
-
-
-
-
-
 
   #header {
 
@@ -83,6 +78,7 @@ header{
 
     text-align: center;
 
+
   }
 
   /*  tag selectors */
@@ -93,7 +89,7 @@ header{
 
      color: #000000;
 
-     font-family: font-family: 'Fredoka One', cursive; margin: 0;
+     font-family:'Fredoka One', cursive; margin: 0;
 
   }
 
@@ -113,37 +109,24 @@ header{
     #menu {
 
       background-color: #ffffff ;
-
        background-size: 46px;
-
        border-bottom: #ffffff 10px solid;
-
        border-top: #ffffff 4px solid;
-
        display: grid;
-
        margin: auto;
-
        max-width: 1140px;
-
        padding: 20px 0;
-
        padding-bottom: 2.5em;
-
        grid-template-rows: auto;
 
       }
 
-
-
             #menu div {
 
               grid-column: span 1;
-
               margin: 0 1em;
 
               }
-
 
 
     /* button */
@@ -151,34 +134,24 @@ header{
     .btn-yellow {
 
       background-color: #FF0;
-
       border: 3px solid #BB0;
-
       border-radius: 5px;
-
       color: #DA0;
-
       cursor: pointer;
-
       display: inline-block;
-
       font-size: 1.5em;
-
       padding: 0 10px 2px 10px;
-
       transition: background-color 0.5s;
-
       transition: color 0.5s;
-
     }
 
     .btn-yellow:hover {
 
         color: #FF0;
-
-        background-color: #DA0; text-decoration: none;
-
-        transition: background-color 0.5s; transition: color 0.5s;
+        background-color: #DA0;
+        text-decoration: none;
+        transition: background-color 0.5s;
+        transition: color 0.5s;
 
       }
 
@@ -186,13 +159,9 @@ header{
     #footer {
 
         color: white;
-
         font-size: 0.8em;
-
         opacity: 0.4;
-
         padding: 1em;
-
         text-align:center;
 
 
@@ -204,23 +173,14 @@ header{
     .btn-red {
 
         background-color: #FF0;
-
         border: 3px solid #BB0;
-
         border-radius: 5px;
-
         color: #DA0;
-
         cursor: pointer;
-
         display: inline-block;
-
         font-size: 1.5em;
-
         padding: 0 10px 2px 10px;
-
         transition: background-color 0.5s;
-
         transition: color 0.5s;
 
       }
@@ -228,10 +188,10 @@ header{
     .btn-red:hover {
 
           color: #FF0;
-
-          background-color: #DA0; text-decoration: none;
-
-          transition: background-color 0.5s; transition: color 0.5s;
+          background-color: #DA0;
+          text-decoration: none;
+          transition: background-color 0.5s;
+          transition: color 0.5s;
 
         }
 
@@ -239,13 +199,9 @@ header{
     #footer {
 
           color: white;
-
           font-size: 0.8em;
-
           opacity: 0.4;
-
           padding: 1em;
-
           text-align:center;
 
 
@@ -260,23 +216,14 @@ header{
       .btn-blue {
 
           background-color: #FF0;
-
           border: 3px solid #BB0;
-
           border-radius: 5px;
-
           color: #DA0;
-
           cursor: pointer;
-
           display: inline-block;
-
           font-size: 1.5em;
-
           padding: 0 10px 2px 10px;
-
           transition: background-color 0.5s;
-
           transition: color 0.5s;
 
         }
@@ -284,10 +231,10 @@ header{
       .btn-blue:hover {
 
             color: #FF0;
-
-            background-color: #DA0; text-decoration: none;
-
-            transition: background-color 0.5s; transition: color 0.5s;
+            background-color: #DA0;
+            text-decoration: none;
+            transition: background-color 0.5s;
+            transition: color 0.5s;
 
           }
 
@@ -295,18 +242,13 @@ header{
       #footer {
 
             color: white;
-
             font-size: 0.8em;
-
             opacity: 0.4;
-
             padding: 1em;
-
             text-align:center;
 
 
           }
-
 
 
           /* button */
@@ -316,34 +258,24 @@ header{
         .btn-green {
 
             background-color: #FF0;
-
             border: 3px solid #BB0;
-
             border-radius: 5px;
-
             color: #DA0;
-
             cursor: pointer;
-
             display: inline-block;
-
             font-size: 1.5em;
-
             padding: 0 10px 2px 10px;
-
             transition: background-color 0.5s;
-
             transition: color 0.5s;
-
           }
 
         .btn-green:hover {
 
               color: #FF0;
-
-              background-color: #DA0; text-decoration: none;
-
-              transition: background-color 0.5s; transition: color 0.5s;
+              background-color: #DA0;
+              text-decoration: none;
+              transition: background-color 0.5s;
+              transition: color 0.5s;
 
             }
 
@@ -354,49 +286,47 @@ header{
         #footer {
 
               color: black;
-
               font-size: 0.8em;
-
               opacity: 0.4;
-
               padding: 1em;
-
               text-align:center;
-
-
             }
 
         #words  {
           color: black;
           font-size: 4em;
-          text-align: center;
           padding: 10px;
           background-color: white;
-          background-size: 46px;
+          background-size: 30px;
           border-bottom: white 10px solid;
           border-top: white 4px solid; display: grid;
+          display:grid;
           margin: auto;
           max-width: 1140px;
           padding: 20px 0;
           padding-bottom: 2.5em;
-          grid-template-rows: auto;
-
-          }
-
-        }
-
-      /* descendant selectors */
-        #words li  {
-          color: black;
-          font-size: 1em;
-          text-align: center;
-          padding: 20px;
-          grid-column: span 3;
-          padding-bottom: 0.3em;
+          grid-template-columns: 1fr;
+          align-content:center;
 
         }
 
         #words .word {
       float: right;
       padding-right: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #whit;
+  padding: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
