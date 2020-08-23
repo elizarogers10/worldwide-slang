@@ -19,8 +19,23 @@ header{
   padding: 5px;
 }
 
+h1 {
+
+  color: #0a34a6;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 4em;
+  padding: 20px;
+  margin: 0
+
+   }
+
  h2 {
   text-align: center;
+  font-size: 3em;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #ffffff;
+
+
 }
 
 #categories {
@@ -30,6 +45,9 @@ header{
 
 #categories p {
   text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
 }
 
   nav ul {
@@ -37,6 +55,9 @@ header{
     padding: 20px 0;
     list-style-type: none;
     text-align: center;
+    text-decoration: none;
+    background-color: #0a65a6
+
   }
 
   nav li {
@@ -47,8 +68,8 @@ header{
   }
 
   nav a {
-    colour:#444;
     text-decoration: none;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Fredoka One', cursive; margin: 0;
@@ -56,59 +77,37 @@ header{
   }
 
   nav a:hover{
-    color: #000000;
+    color: #9ef4ff;
 
   }
 
   #header {
 
-    background-color: #869deb;
-
+    background-color: #ffffff;
     background-image: url(checks.svg), url(checks.svg); background-position: top, bottom; background-repeat: repeat-x;
-
     background-size: 35px;
-
     border-bottom: white 10px solid;
-
     margin-bottom: 40px;
-
     padding-top: 50px;
-
     padding-bottom: 40px;
-
     text-align: center;
-
-
   }
 
   /*  tag selectors */
 
    body {
 
-     background-color: #869deb;
-
-     color: #000000;
-
+     background-color: #ffffff;
+     color: #0a65a6;
+     font-style: normal;
      font-family:'Fredoka One', cursive; margin: 0;
 
   }
 
-    h1 {
-
-      color: #ffffff;
-
-      font-family: 'Rubik Mono One', sans-serif;
-
-      font-size: 3em;
-
-      margin: 0
-
-       }
-
 
     #menu {
 
-      background-color: #ffffff ;
+      background-color: #0a65a6 ;
        background-size: 46px;
        border-bottom: #ffffff 10px solid;
        border-top: #ffffff 4px solid;
@@ -133,25 +132,28 @@ header{
 
     .btn-yellow {
 
-      background-color: #FF0;
-      border: 3px solid #BB0;
+      background-color: #9ef4ff;
+      border: 8px solid #9ef4ff;
       border-radius: 5px;
-      color: #DA0;
+      color: #0a34a6;
       cursor: pointer;
       display: inline-block;
-      font-size: 1.5em;
+      font-size: 2em;
       padding: 0 10px 2px 10px;
       transition: background-color 0.5s;
       transition: color 0.5s;
+      text-decoration: none;
     }
 
     .btn-yellow:hover {
 
-        color: #FF0;
-        background-color: #DA0;
-        text-decoration: none;
-        transition: background-color 0.5s;
-        transition: color 0.5s;
+      color: #0a34a6;
+      background-color: #9eb8ff;
+      border: 8px solid #9eb8ff;
+      text-decoration: none;
+      transition: background-color 0.5s;
+      transition: color 0.5s;
+
 
       }
 
@@ -160,7 +162,7 @@ header{
 
         color: white;
         font-size: 0.8em;
-        opacity: 0.4;
+        opacity: 0.7;
         padding: 1em;
         text-align:center;
 
@@ -172,23 +174,25 @@ header{
 
     .btn-red {
 
-        background-color: #FF0;
-        border: 3px solid #BB0;
+        background-color: #9ef4ff;
+        border: 8px solid #9ef4ff;
         border-radius: 5px;
-        color: #DA0;
+        color: #0a34a6;
         cursor: pointer;
         display: inline-block;
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 0 10px 2px 10px;
         transition: background-color 0.5s;
         transition: color 0.5s;
+        text-decoration: none;
 
       }
 
     .btn-red:hover {
 
-          color: #FF0;
-          background-color: #DA0;
+          color: #0a34a6;
+          background-color: #9eb8ff;
+          border: 8px solid #9eb8ff;
           text-decoration: none;
           transition: background-color 0.5s;
           transition: color 0.5s;
@@ -215,26 +219,28 @@ header{
 
       .btn-blue {
 
-          background-color: #FF0;
-          border: 3px solid #BB0;
-          border-radius: 5px;
-          color: #DA0;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 1.5em;
-          padding: 0 10px 2px 10px;
-          transition: background-color 0.5s;
-          transition: color 0.5s;
+        background-color: #9ef4ff;
+        border: 8px solid #9ef4ff;
+        border-radius: 5px;
+        color: #0a34a6;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 2em;
+        padding: 0 10px 2px 10px;
+        transition: background-color 0.5s;
+        transition: color 0.5s;
+        text-decoration: none;
 
         }
 
       .btn-blue:hover {
 
-            color: #FF0;
-            background-color: #DA0;
-            text-decoration: none;
-            transition: background-color 0.5s;
-            transition: color 0.5s;
+        color: #0a34a6;
+        background-color: #9eb8ff;
+        border: 8px solid #9eb8ff;
+        text-decoration: none;
+        transition: background-color 0.5s;
+        transition: color 0.5s;
 
           }
 
@@ -257,25 +263,27 @@ header{
 
         .btn-green {
 
-            background-color: #FF0;
-            border: 3px solid #BB0;
-            border-radius: 5px;
-            color: #DA0;
-            cursor: pointer;
-            display: inline-block;
-            font-size: 1.5em;
-            padding: 0 10px 2px 10px;
-            transition: background-color 0.5s;
-            transition: color 0.5s;
+          background-color: #9ef4ff;
+          border: 8px solid #9ef4ff;
+          border-radius: 5px;
+          color: #0a34a6;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 2em;
+          padding: 0 10px 2px 10px;
+          transition: background-color 0.5s;
+          transition: color 0.5s;
+          text-decoration: none;
           }
 
         .btn-green:hover {
 
-              color: #FF0;
-              background-color: #DA0;
-              text-decoration: none;
-              transition: background-color 0.5s;
-              transition: color 0.5s;
+          color: #0a34a6;
+          background-color: #9eb8ff;
+          border: 8px solid #9eb8ff;
+          text-decoration: none;
+          transition: background-color 0.5s;
+          transition: color 0.5s;
 
             }
 
@@ -285,43 +293,41 @@ header{
 
         #footer {
 
-              color: black;
-              font-size: 0.8em;
-              opacity: 0.4;
+              color: red;
+              font-size: 1em;
+              opacity: 0.5;
               padding: 1em;
               text-align:center;
             }
 
-        #words  {
-          color: black;
-          font-size: 4em;
-          padding: 10px;
-          background-color: white;
-          background-size: 30px;
-          border-bottom: white 10px solid;
-          border-top: white 4px solid; display: grid;
-          display:grid;
-          margin: auto;
-          max-width: 1140px;
-          padding: 20px 0;
-          padding-bottom: 2.5em;
-          grid-template-columns: 1fr;
-          align-content:center;
+
 
         }
+  #words {
 
-        #words .word {
-      float: right;
-      padding-right: 1em;
+      background-color: #0a65a6;
+      color: #ffffff;
+      background-size: 46px;
+      border-bottom: #ffffff 10px solid;
+      border-top: #ffffff 4px solid;
+      display: grid;
+      margin: auto;
+      max-width: 1140px;
+      padding: 20px 0;
+      padding-bottom: 2.5em;
+      grid-template-rows: auto;
+      text-align:center;
+
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #whit;
+  background-color:#;
   padding: 10px;
   padding-left: 100px;
   padding-right: 100px;
+
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
@@ -329,4 +335,11 @@ header{
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+#categories {
+  text-decoration: none;
+
+
+
 }
