@@ -1,6 +1,9 @@
 from flask import Flask, render_template
+import sqlite3
 
 app = Flask(__name__)
+
+
 
 @app.route('/')
 def index():
@@ -16,35 +19,91 @@ def Objects():
 
 @app.route('/Sayings')
 def Sayings():
-    return render_template('Sayings.html')
+    result = []
+    con=sqlite3.connect ('sayings_table.db')
+    cur=con.execute('SELECT * FROM sayings_table')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('Sayings.html', result=result)
 
 @app.route('/R18')
 def R18():
-    return render_template('R18.html')
+    result = []
+    con=sqlite3.connect ('R18_table.db')
+    cur=con.execute('SELECT * FROM R18')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('R18.html', result=result)
 
 @app.route('/pleased')
 def pleased():
     return render_template('pleased.html')
+    result = []
+    con=sqlite3.connect ('expressions_table.db')
+    cur=con.execute('SELECT * FROM pleased')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('pleased.html', result=result)
+
 
 @app.route('/tired')
 def tired():
     return render_template('tired.html')
+    result = []
+    con=sqlite3.connect ('expressions_table.db')
+    cur=con.execute('SELECT * FROM tired')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('tired.html', result=result)
+
 
 @app.route('/disgusting')
 def disgusting():
     return render_template('disgusting.html')
+    result = []
+    con=sqlite3.connect ('expressions_table.db')
+    cur=con.execute('SELECT * FROM digusting')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('digusting.html', result=result)
 
 @app.route('/angry')
 def angry():
     return render_template('angry.html')
+    result = []
+    con=sqlite3.connect ('expressions_table.db')
+    cur=con.execute('SELECT * FROM angry')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('angry.html', result=result)
 
 @app.route('/ohhno')
 def ohhno():
     return render_template('ohhno.html')
+    result = []
+    con=sqlite3.connect ('expressions_table.db')
+    cur=con.execute('SELECT * FROM ohhno')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('ohhno.html', result=result)
 
 @app.route('/man')
 def man():
     return render_template('man.html')
+    result = []
+    con=sqlite3.connect ('sayings_table.db')
+    cur=con.execute('SELECT * FROM man')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('man.html', result=result)
 
 @app.route('/good')
 def good():
@@ -66,13 +125,28 @@ def goodbye():
 def chat():
     return render_template('chat.html')
 
-@app.route('/insults')
+@app.route('/insult')
 def insults():
     return render_template('insults.html')
+    result = []
+    con=sqlite3.connect ('R18_table.db')
+    cur=con.execute('SELECT * FROM insults')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('insults.html', result=result)
+
 
 @app.route('/kissing')
 def kissing():
     return render_template('kissing.html')
+    result = []
+    con=sqlite3.connect ('R18_table.db')
+    cur=con.execute('SELECT * FROM kissing')
+    for row in cur:
+        result.append(list(row))
+    con.close()
+    return render_template('kissing.html', result=result)
 
 @app.route('/drunk')
 def drunk():
@@ -82,7 +156,7 @@ def drunk():
 def vommiting():
     return render_template('vommiting.html')
 
-@app.route('/goaway')
+@app.route('/go away')
 def goaway():
     return render_template('goaway.html')
 

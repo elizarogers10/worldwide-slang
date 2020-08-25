@@ -13,12 +13,13 @@
     <header>
       <nav>
         <ul>
+            <li>  <img id= logo src="{{ url_for('static', filename='world.png') }}" />
           <li><a href='/'>Home</a><li>
           <li><a href='expressions'>Expressions</a><li>
           <li><a href='Sayings'>Sayings</a><li>
           <li><a href='Objects'>Objects</a><li>
           <li><a href='R18'>R18</a><li>
-      
+
         </ul>
       </nav>
     </header>
@@ -26,31 +27,14 @@
     <div id="menu">
       <h2>Choose A R18 Word </h2>
 
+      {{ result }}
+
       <div id="categories">
+        {% for category in result %}
         <p>
-          <a class="btn-insults" href="insults">Insults</a>
+          <a class="btn-categories" href="{{category[0]}}">{{category[0]}}</a>
         </p>
-        <p>
-          <a class="btn-goaway" href="goaway">Go Away</a>
-        </p>
-        <p>
-          <a class="btn-kissing" href="kissing">Kissing</a>
-        </p>
-        <p>
-          <a class="btn-alcohol" href="alcohol">Alcohol</a>
-        </p>
-        <p>
-          <a class="btn-condom" href="condom">Condom</a>
-        </p>
-        <p>
-          <a class="btn-drunk" href="drunk">Drunk</a>
-        </p>
-        <p>
-          <a class="btn-penis" href="penis">Penis</a>
-        </p>
-        <p>
-          <a class="btn-vommiting" href="vommiting">Vommiting</a>
-        </p>
+        {% endfor %}
       </div>
 
     <div id="footer">
